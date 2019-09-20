@@ -1,0 +1,265 @@
+body{
+	font-family: 'Dancing Script', cursive;
+	background-color:#02010a;
+}
+
+img{
+	/*box-shadow:2px 2px 2px 2px #02010a;*/
+}
+
+header{
+	background-color:#5b7989;
+	border-radius:10px 10px 0 0;
+	height:180px;
+	animation: animacionHeader 1s;
+}
+
+header h1{
+	color:#FFF;
+	text-shadow:2px 2px 2px #02010a;
+	margin-left: 1em;
+	padding-top: 1em;
+}
+
+header nav ul {
+	list-style:none;
+	position:absolute;
+	right:0;
+	font-size:27px;
+
+}
+
+header ul > li {
+	float:left;
+	padding-right:1em;
+}
+
+header ul > li a{
+	color:#FFF;
+}
+
+#contenido img{
+	box-shadow:2px 2px 2px 2px #02010a;
+}
+
+#imagen-central{
+	background-color:#82c3a6;
+	text-align:center;
+	padding:1em 0 1em 0;
+}
+
+#container{
+	background-color:#d5c75f;
+	border:solid 1px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+#container div {
+	height:450px;
+	width:840px;
+	margin:2em;
+	text-align:center;
+}
+
+#container div img{
+	height:90%;
+	width:640px;
+	border:solid 2px;
+}
+
+a{
+	font-size:27px;
+}
+
+#img2:hover{
+	transform:rotate(10deg);
+	box-shadow:2px 2px 2px 2px #82c3a6;
+}
+
+
+#img3:hover{
+	animation:animacionImg3 1s;
+	box-shadow:2px 2px 2px 2px #82c3a6;
+}
+
+@-webkit-keyframes animacionImg3{
+	from{
+		margin-right:20px;
+		margin-top:-5px;
+	}
+
+	to{
+		margin-right:0;
+		margin-top:0;
+	}
+}
+footer{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	border-radius:0 0 10px 10px;
+	background-color:#C6d5c5;
+	font-size:18px;
+}
+
+footer div {
+	width:350px;
+	height:200px;
+	margin:1em;
+	padding-left:1em;
+}
+
+footer div ul {
+	list-style:none;
+}
+
+
+
+/*@media screen and (min-width:900px){
+
+
+}*/
+
+@media (max-width:900px){
+
+	#container div img{
+			width: 100%;
+			height: 60%;
+	}
+
+	#imagen-central img{
+
+		width: 97%;
+
+	}
+
+	header{
+		text-align: center;
+		height: 200px;
+	}
+
+  #contenedor-galeria-paisajes img {
+
+		width: 100%;
+
+	}
+
+	#contenedor-galeria-retratos img{
+
+		width: 100%;
+
+	}
+}
+
+
+/*Página de paisajes*/
+
+#contenedor-galeria-paisajes{
+	background-color:#d5c75f;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#contenedor-galeria-paisajes div{
+	height:300px;
+	width:500px;
+	margin: 2%;
+	text-align: center;
+}
+
+#contenedor-galeria-paisajes img{
+	height:97%;
+}
+
+#contenedor-galeria-paisajes div:nth-child(1){
+	 filter: blur(10px);
+
+}
+
+#contenedor-galeria-paisajes div:nth-child(2){
+	 filter: grayscale(100%);
+
+}
+
+#contenedor-galeria-paisajes div:nth-child(3){
+	 filter: sepia(90%);
+
+}
+
+#contenedor-galeria-paisajes div:nth-child(4){
+	filter: grayscale(100%);
+
+}
+
+
+#contenedor-galeria-paisajes div:nth-child(6){
+	filter: grayscale(100%);
+
+}
+
+
+/*Página de retratos*/
+
+#contenedor-galeria-retratos{
+	background-color:#d5c75f;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#contenedor-galeria-retratos div{
+
+	height:300px;
+	width:500px;
+	margin: 2%;
+	text-align: center;
+}
+
+#contenedor-galeria-retratos img{
+	height:97%;
+}
+
+#contenedor-galeria-retratos div:nth-child(1){
+	 filter: blur(10px);
+
+}
+
+#contenedor-galeria-retratos div:nth-child(2){
+	 filter: grayscale(100%);
+
+}
+
+#contenedor-galeria-retratos div:nth-child(3){
+	 filter: sepia(90%);
+
+}
+
+#contenedor-galeria-retratos div:nth-child(4){
+	filter: grayscale(100%);
+
+}
+
+
+#contenedor-galeria-retratos div:nth-child(6){
+	filter: grayscale(100%);
+
+}
+
+@-webkit-keyframes animacionHeader{
+
+		0%{
+			margin-top:150%;
+		}
+
+		60%{
+			margin-top:-5%;
+		}
+
+		100%{
+			margin-top:0%;
+		}
+
+}
